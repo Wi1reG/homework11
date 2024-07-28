@@ -1,18 +1,20 @@
 public class Book {
-    private String author;
+    private Author author;
     private int year;
     private String nameBook;
 
-    public Book (String author, int year, String nameBook) {
+    public Book (Author author, int year, String nameBook) {
         this.author = author;
         this.year = year;
         this.nameBook = nameBook;
 
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return this.author;
     }
+
+
     public int getYear() {
         return this.year;
     }
@@ -21,16 +23,11 @@ public class Book {
         return this.nameBook;
     }
 
-    public int setYear(int year) {
+    public void setYear(int year) {
         this.year = year;
-        return year;
     }
 
-    public void authorVerification () {
-        if (author.length() == 0) {
-            System.out.println("Необходимо ввести автора");
-        }
-    }
+
 
 
 
