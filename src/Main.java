@@ -9,9 +9,33 @@ public class Main {
         System.out.println(qwe.getYear());
         qwe.setYear(1996);
         System.out.println(qwe.getYear());
+        System.out.println(Pushkin.equals(Lermontov));
+        System.out.println(Pushkin);
+        System.out.println(asd);
+        System.out.println(Lermontov.equals(Pushkin));
+        System.out.println(asd.equals(qwe));
+        System.out.println(Pushkin.hashCode());
+        System.out.println(asd.hashCode());
 
 
 
     }
 }
 
+//Реализуйте методы
+//toString
+//,
+//equals
+// и
+//hashCode
+// в классах
+//Author
+// и
+//Book
+//, которые вы создали на прошлом уроке.
+//
+//Обратите внимание, что
+//toString
+// книги не должен дублировать код из
+//toString
+// автора, а должен делегировать (вызывать) его версию метода.
