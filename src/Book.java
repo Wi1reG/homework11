@@ -38,11 +38,11 @@ public class Book {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Book book)) return false;
-        return Objects.equals(author, book.author);
+        return year == book.year && Objects.equals(author, book.author) && Objects.equals(nameBook, book.nameBook);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(nameBook);
+        return Objects.hash(author, year, nameBook);
     }
 }
